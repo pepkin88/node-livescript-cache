@@ -3,7 +3,7 @@
 Caches the contents of required LiveScript files so that they are not
 recompiled to help improve startup time.
 
-It's a fork of `pepkin88/node-coffee-compile`, which is a fork of `trello/node-coffee-compile`.
+It's a fork of `pepkin88/node-coffee-cache`, which is a fork of `trello/node-coffee-cache`.
 
 ## What it does
 
