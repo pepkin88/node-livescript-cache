@@ -1,16 +1,31 @@
 {
-  "name": "coffee-cache",
+  "name": "livescript-cache",
   "author": "Doug Patti <douglas.patti@gmail.com>",
-  "description": "Caches the contents of required CoffeeScript files so that they are not recompiled to help improve startup time",
+  "description": "Caches the contents of required LiveScript files so that they are not recompiled to help improve startup time",
   "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FogCreek/node-coffee-cache.git"
+    "url": "https://github.com/pepkin88/node-livescript-cache.git"
   },
-  "main": "./lib/coffee-cache",
-  "keywords": ["coffee", "cache", "filesystem", "startup"],
+  "contributors": [
+    {
+      "name": "Marek Pepke",
+      "email": "me@pepkin88.me"
+    }
+  ],
+  "main": "./lib/livescript-cache",
+  "keywords": [
+    "livescript",
+    "ls",
+    "cache",
+    "filesystem",
+    "startup"
+  ],
   "dependencies": {
     "mkpath": "0.1.0"
+  },
+  "peerDependencies": {
+    "livescript": "^1.4.0"
   },
   "license": "MIT"
 }
