@@ -16,13 +16,21 @@ disk. In our usage, this has reduced the startup time from 7s to 2s, which means
 a lot when you have to restart your application every time you want to test a
 change.
 
+## Features
+
+- `require` extensions for `.ls` and `.json.ls`
+- disk cache for compiled files
+- caching source maps
+- compatibility with the [`source-map-support`](https://www.npmjs.com/package/source-map-support) module
+    – to make use of it, just `npm install` that module to your project
+
 ## How to use
 
 1. Add to your package.json dependencies and run `npm install` or run `npm install livescript-cache`.
 
 2.  In your entry point file, add the following:
 
-    ```livescript
+    ```js
     require('livescript-cache')
     ```
 
@@ -48,3 +56,21 @@ of two ways:
 
 Just make sure your process has permission to create the necessary folder or
 files.
+
+---
+
+You can instruct the module to only use a memory cache. This may look like defeating
+the main purpose of the module, but it can be still useful, if we want to have
+an absolute certainty, that the correct files were loaded (e.g. on production).
+
+To do this, invoke the `useOnlyMemory` method, with an argument or not, like this:
+
+    ```js
+    require('livescript-cache').useOnlyMemory(true)
+    ```
+
+or this:
+
+    ```js
+    require('livescript-cache').useOnlyMemory()
+    ```
