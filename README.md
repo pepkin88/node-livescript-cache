@@ -65,12 +65,12 @@ an absolute certainty, that the correct files were loaded (e.g. on production).
 
 To do this, invoke the `useOnlyMemory` method, with an argument or not, like this:
 
-    ```js
-    require('livescript-cache').useOnlyMemory(true)
-    ```
+```js
+require('livescript-cache').useOnlyMemory(true)
+```
 
 or this:
 
-    ```js
-    require('livescript-cache').useOnlyMemory()
-    ```
+```js
+require('livescript-cache').useOnlyMemory()
+```
