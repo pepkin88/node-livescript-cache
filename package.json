@@ -19,7 +19,12 @@
     "ls",
     "cache",
     "filesystem",
-    "startup"
+    "startup",
+    "source",
+    "source maps",
+    "source map",
+    "stack",
+    "trace"
   ],
   "dependencies": {
     "mkpath": "0.1.0"
