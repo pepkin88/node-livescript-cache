@@ -2,7 +2,7 @@
   "name": "livescript-cache",
   "author": "Doug Patti <douglas.patti@gmail.com>",
   "description": "Caches the contents of required LiveScript files so that they are not recompiled to help improve startup time",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/pepkin88/node-livescript-cache.git"
